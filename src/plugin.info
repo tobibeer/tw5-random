@@ -1,0 +1,12 @@
+{
+    "title": "$:/plugins/tobibeer/random",
+    "description": "A filter to return one or more random titles",
+    "author": "Tobias Beer",
+    "version": "0.1.0",
+    "core-version": ">=5.1.9",
+    "source": "https://github.com/tobibeer/tw5-random",
+    "documentation": "https://tobibeer.github.io/tw5-random",
+    "plugin-type": "plugin",
+	"requires": "",
+	"list": "readme"
+}

@@ -1,0 +1,27 @@
+created: 20151221124129296
+creator: Tobias Beer
+modified: 20151221125826282
+title: random-Info
+type: text/vnd.tiddlywiki
+
+The plugin $:/plugins/tobibeer/random provides:
+
+; random[]
+: a filter retrieving one or more random titles from the input set
+
+!! Number Of Random Titles
+
+Use the ''operand'' to specify the number of titles to retrieve from the input set:
+
+* defaults to `1` if not specified or not a number
+* cannot be greater than the number of input titles
+* `[tag[Plugins]random[3]]`
+** get 3 random tiddlers tagged `Plugins`
+
+!! Refresh Behaviour
+
+@@.note
+''Note'': The core <<x ListWidget>> or <<x SetWidget>> will refresh at every single event if you use the ''random[]'' filter with it.
+@@
+
+To avoid this refresh behavior and only evaluate the filter when a tiddler or its widgets are first rendered, install and use [[setvars]].

@@ -1,0 +1,45 @@
+created: 20151221123443067
+creator: Tobias Beer
+modified: 20151221124953519
+title: random-Examples
+type: text/vnd.tiddlywiki
+
+!! A Random Tiddler
+
+<<` """{{{ [prefix[random]random[]] }}}""">>
+
+@@.note
+''Important:'' Notice how the examples will change at every click you make. Try clicking in the sidebar.
+@@
+
+!! No Refresh
+
+//  Install and use the [[setvars]] widget to avoid constant refreshing://
+
+<$macrocall $name="`" text="""<$setvars _r="[prefix[random]random[]]" random="\{{{\ [r] \}}}\">
+
+<<random>>
+</$setvars>"""/>
+
+!! Three Random Tiddlers
+
+<$macrocall $name="`" text="""<$setvars _r="[prefix[random]random[3]]" random="\{{{\ [r] \}}}\">
+
+<<random>>
+</$setvars>"""/>
+
+!! A Random Plugin
+
+<$macrocall $name="`" text="""<$setvars _r="[tag[Plugins]random[]]" random="\{{{\ [r] \}}}\">
+
+<<random>>
+</$setvars>"""/>
+
+!! No More
+
+// The random filter can and will only retrieve as many as there are titles in the input set://
+
+<$macrocall $name="`" text="""<$setvars _r="[[random]random[5]]" random="\{{{\ [r] \}}}\">
+
+<<random>>
+</$setvars>"""/>

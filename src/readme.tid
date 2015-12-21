@@ -1,0 +1,12 @@
+title: $:/plugins/tobibeer/random/readme
+
+The plugin $:/plugins/tobibeer/random provides:
+
+; random[]
+: a filter retrieving one or more random titles from the input set
+: `[tag[Plugins]random[3]]` — returns three titles tagged [[Plugins]]
+
+<br>
+
+; documentation / examples / demos...
+: http://tobibeer.github.io/tw5-plugins#random
